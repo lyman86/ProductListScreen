@@ -1,21 +1,26 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <include
-        layout="@layout/product_list_screen_titlebar" />
+    <include layout="@layout/product_list_screen_titlebar" />
 
     <include
-        android:layout_below="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_below="@+id/titlebar"
         layout="@layout/product_list_screen_filter" />
 
     <View
+        android:id="@+id/line_01"
         android:layout_width="match_parent"
         android:layout_height="1.0px"
         android:layout_below="@+id/filter"
         android:background="@android:color/darker_gray" />
+    <View 
+        
+        />
 
+ 
 </RelativeLayout>

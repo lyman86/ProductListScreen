@@ -1,52 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:id="@+id/titlebar"
-    android:background="@android:color/darker_gray"
-    android:gravity="center_vertical"
+    android:background="@color/custom_bg_gray"
+    android:gravity="center"
     android:orientation="horizontal" >
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_margin="5dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/back_indicator" />
-
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_weight="3" >
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:gravity="center" >
 
-        <EditText
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/product_list_screen_titlebar_edt_bg" />
+            android:src="@drawable/back" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
         android:layout_marginTop="5dp"
         android:layout_weight="1" >
 
-        <TextView
-            android:layout_width="0dp"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight="3"
-            android:background="@android:color/holo_blue_light"
-            android:text="搜索" />
-        
-        <View 
-            android:layout_width="0dp"
+            android:background="@drawable/product_list_screen_titlebar_edt_bg"
+            android:hint="螺丝刀" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
+            android:src="@drawable/change_mode_iv_and_tv" />
     </LinearLayout>
 
 </LinearLayout>
