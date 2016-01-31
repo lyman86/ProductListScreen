@@ -47,7 +47,7 @@ public class GetFlowLayoutBoundUtil {
 				cl += (lp.leftMargin+childWidth);
 			}
 			if (pos==viewGroup.getChildCount()-1) {
-				allHeight+=childHeight;
+				allHeight+=(childHeight+lp.bottomMargin+lp.topMargin);
 				maxWidth = Math.max(cl, maxWidth); 
 			}
 		

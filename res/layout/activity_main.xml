@@ -18,9 +18,32 @@
         android:layout_height="1.0px"
         android:layout_below="@+id/filter"
         android:background="@android:color/darker_gray" />
-    <View 
-        
+    
+<LinearLayout
+    android:id="@+id/screen_type_llayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line_01"
+    android:visibility="gone"
+    android:orientation="vertical" >
+    
+    <com.example.productlistscreen.view.FlowLayout
+        android:id="@+id/screen_type_flayout"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content" >
+    </com.example.productlistscreen.view.FlowLayout>
+    
+    <TextView 
+        android:id="@+id/screen_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="系类筛选"
+        android:gravity="center"
+        android:background="@android:color/holo_green_light"
         />
+    
 
+</LinearLayout>
  
 </RelativeLayout>
