@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyman="http://schemas.android.com/apk/res/com.example.productlistscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <View
+        android:id="@+id/left_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <com.ly.commodityclassficationlist.view.CustomTitleBarView
+            android:id="@+id/cChildTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            lyman:centerTextColorTitle="@android:color/background_dark"
+            lyman:centerTextSizeTitle="20sp"
+            lyman:centerTextTitle="筛选"
+            lyman:centerTypeTitle="text"
+            lyman:leftTextColorTitle="@android:color/background_dark"
+            lyman:leftTextPaddingTitle="2dp"
+            lyman:leftTextSizeTitle="16sp"
+            lyman:leftTextTitle="取消"
+            lyman:leftTypeTitle="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/data_detail_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cus_bg"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

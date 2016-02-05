@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/line_01"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <com.ly.commodityclassficationlist.view.FlowLayout
+        android:id="@+id/screen_type_flayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+    </com.ly.commodityclassficationlist.view.FlowLayout>
+
+    <Button
+        android:id="@+id/screen_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_select_color"
+        android:gravity="center"
+        android:text="系类筛选" />
+
+    <View
+        android:id="@+id/down_view"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@android:color/background_dark" />
+
+</LinearLayout>

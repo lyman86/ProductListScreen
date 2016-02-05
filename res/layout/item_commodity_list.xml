@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/commodity_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:text="是发动机的快速减肥绿色减肥老师说浪费老师老师方老师了康师傅老师离开对方说了的法律收到类似方老师的法律是否有"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/brand_model_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commodity_name_tv"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="dfsf"
+            android:textColor="@android:color/darker_gray" />
+
+       
+
+        <TextView
+            android:id="@+id/order_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brand_model_tv"
+            android:maxLines="1"
+            android:text="dfsf"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/delivery_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_number_tv"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="货期   10天"
+            android:textColor="@android:color/background_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/delivery_time_tv"
+            android:paddingRight="20dp" >
+            <ImageView 
+                android:id="@+id/cart_iv"
+                android:layout_width="30dp"
+				android:layout_height="match_parent"
+				android:src="@drawable/cart"
+				android:layout_alignParentLeft="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+                
+                 <TextView
+                android:id="@+id/old_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="￥1000"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/current_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="￥100"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+            </LinearLayout>
+
+           
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

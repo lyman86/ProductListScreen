@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyman="http://schemas.android.com/apk/res/com.example.productlistscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:alpha="0.3"
+        android:background="@android:color/background_dark" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" 
+        android:background="@color/cus_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.ly.commodityclassficationlist.view.CustomTitleBarView
+            android:id="@+id/cTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            lyman:centerTextColorTitle="@android:color/background_dark"
+            lyman:centerTextSizeTitle="20sp"
+            lyman:centerTextTitle="筛选"
+            lyman:centerTypeTitle="text"
+            lyman:leftTextColorTitle="@android:color/background_dark"
+            lyman:leftTextPaddingTitle="2dp"
+            lyman:leftTextSizeTitle="16sp"
+            lyman:leftTextTitle="取消"
+            lyman:leftTypeTitle="text"
+            lyman:rightTextColorTitle="@android:color/background_dark"
+            lyman:rightTextPaddingTitle="2dp"
+            lyman:rightTextSizeTitle="16sp"
+            lyman:rightTextTitle="确定"
+            lyman:rightTypeTitle="text" />
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1.0px"
+            android:background="@android:color/white"
+            lyman:leftText="配送至"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="上海"
+            lyman:rightSideTextColor="@android:color/holo_green_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            lyman:leftText="货期"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="现货10天"
+            lyman:rightSideTextColor="@android:color/background_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1.0px"
+            android:background="@android:color/white"
+            lyman:leftText="类别"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="工具/充电式"
+            lyman:rightSideTextColor="@android:color/background_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_brand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1.0px"
+            android:background="@android:color/white"
+            lyman:leftText="品牌"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="达力  力士"
+            lyman:rightSideTextColor="@android:color/background_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_series"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1.0px"
+            android:background="@android:color/white"
+            lyman:leftText="系列"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="达力  5600"
+            lyman:rightSideTextColor="@android:color/background_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <com.ly.commodityclassficationlist.view.CustomSelectItem
+            android:id="@+id/select_specifications"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1.0px"
+            android:background="@android:color/white"
+            lyman:leftText="规格"
+            lyman:leftTextColor="@android:color/background_dark"
+            lyman:leftTextPaddingLeft="10dp"
+            lyman:leftTextSize="30sp"
+            lyman:leftType="text"
+            lyman:rightImagePaddingRight="10dp"
+            lyman:rightImageSource="@drawable/go"
+            lyman:rightSideText="4800v"
+            lyman:rightSideTextColor="@android:color/background_dark"
+            lyman:rightSideTextPaddingRight="4dp"
+            lyman:rightSideTextSize="30sp"
+            lyman:rightSideType="text"
+            lyman:rightType="image" >
+        </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+        <Button
+            android:id="@+id/clean_up_data_btn"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:text="清除选项"
+            android:textColor="@color/text_select_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

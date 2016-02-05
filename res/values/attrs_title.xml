@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <attr name="leftTypeTitle">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+        <enum name="button" value="2" />
+    </attr>
+    <attr name="leftTextColorTitle" format="reference|color" />
+    <attr name="leftTextSizeTitle" format="reference|dimension" />
+    <attr name="leftTextTitle" format="reference|string" />
+    <attr name="leftTextPaddingTitle" format="reference|dimension" />
+    <attr name="leftTextPaddingLeftTitle" format="reference|dimension" />
+    <attr name="leftTextPaddingRightTitle" format="reference|dimension" />
+    <attr name="leftTextPaddingTopTitle" format="reference|dimension" />
+    <attr name="leftTextPaddingBottomTitle" format="reference|dimension" />
+    <attr name="leftImageSourceTitle" format="reference|integer" />
+    <attr name="leftImagePaddingTitle" format="reference|dimension" />
+    <attr name="leftImagePaddingLeftTitle" format="reference|dimension" />
+    <attr name="leftImagePaddingRightTitle" format="reference|dimension" />
+    <attr name="leftImagePaddingTopTitle" format="reference|dimension" />
+    <attr name="leftImagePaddingBottomTitle" format="reference|dimension" />
+    <attr name="leftButtonTextTitle" format="reference|string" />
+    <attr name="leftButtonTextColorTitle" format="reference|color" />
+    <attr name="leftButtonTextSizeTitle" format="reference|dimension" />
+    <attr name="leftButtonBackgroundTitle" format="reference|color" />
+    <attr name="leftButtonPaddingTitle" format="reference|dimension" />
+    <attr name="leftButtonPaddingLeftTitle" format="reference|dimension" />
+    <attr name="leftButtonPaddingRightTitle" format="reference|dimension" />
+    <attr name="leftButtonPaddingTopTitle" format="reference|dimension" />
+    <attr name="leftButtonPaddingBottomTitle" format="reference|dimension" />
+    <attr name="leftButtonMargInTitle" format="reference|dimension" />
+    <attr name="leftButtonMargInLeftTitle" format="reference|dimension" />
+    <attr name="leftButtonMargInRightTitle" format="reference|dimension" />
+    <attr name="leftButtonMargInTopTitle" format="reference|dimension" />
+    <attr name="leftButtonMargInBottomTitle" format="reference|dimension" />
+    <attr name="rightTypeTitle">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+        <enum name="button" value="2" />
+    </attr>
+    <attr name="rightTextColorTitle" format="reference|color" />
+    <attr name="rightTextSizeTitle" format="reference|dimension" />
+    <attr name="rightTextTitle" format="reference|string" />
+    <attr name="rightTextPaddingTitle" format="reference|dimension" />
+    <attr name="rightTextPaddingLeftTitle" format="reference|dimension" />
+    <attr name="rightTextPaddingRightTitle" format="reference|dimension" />
+    <attr name="rightTextPaddingTopTitle" format="reference|dimension" />
+    <attr name="rightTextPaddingBottomTitle" format="reference|dimension" />
+    <attr name="rightImageSourceTitle" format="reference|integer" />
+    <attr name="rightImagePaddingTitle" format="reference|dimension" />
+    <attr name="rightImagePaddingLeftTitle" format="reference|dimension" />
+    <attr name="rightImagePaddingRightTitle" format="reference|dimension" />
+    <attr name="rightImagePaddingTopTitle" format="reference|dimension" />
+    <attr name="rightImagePaddingBottomTitle" format="reference|dimension" />
+    <attr name="rightButtonTextTitle" format="reference|string" />
+    <attr name="rightButtonTextColorTitle" format="reference|color" />
+    <attr name="rightButtonTextSizeTitle" format="reference|dimension" />
+    <attr name="rightButtonBackgroundTitle" format="reference|color" />
+    <attr name="rightButtonPaddingTitle" format="reference|dimension" />
+    <attr name="rightButtonPaddingLeftTitle" format="reference|dimension" />
+    <attr name="rightButtonPaddingRightTitle" format="reference|dimension" />
+    <attr name="rightButtonPaddingTopTitle" format="reference|dimension" />
+    <attr name="rightButtonPaddingBottomTitle" format="reference|dimension" />
+    <attr name="rightButtonMargInTitle" format="reference|dimension" />
+    <attr name="rightButtonMargInLeftTitle" format="reference|dimension" />
+    <attr name="rightButtonMargInRightTitle" format="reference|dimension" />
+    <attr name="rightButtonMargInTopTitle" format="reference|dimension" />
+    <attr name="rightButtonMargInBottomTitle" format="reference|dimension" />
+    <attr name="centerTypeTitle">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+        <enum name="button" value="2" />
+    </attr>
+    <attr name="centerTextColorTitle" format="reference|color" />
+    <attr name="centerTextSizeTitle" format="reference|dimension" />
+    <attr name="centerTextTitle" format="reference|string" />
+    <attr name="centerTextPaddingTitle" format="reference|dimension" />
+    <attr name="centerTextPaddingLeftTitle" format="reference|dimension" />
+    <attr name="centerTextPaddingRightTitle" format="reference|dimension" />
+    <attr name="centerTextPaddingTopTitle" format="reference|dimension" />
+    <attr name="centerTextPaddingBottomTitle" format="reference|dimension" />
+    <attr name="centerImageSourceTitle" format="reference|integer" />
+    <attr name="centerImagePaddingTitle" format="reference|dimension" />
+    <attr name="centerImagePaddingLeftTitle" format="reference|dimension" />
+    <attr name="centerImagePaddingRightTitle" format="reference|dimension" />
+    <attr name="centerImagePaddingTopTitle" format="reference|dimension" />
+    <attr name="centerImagePaddingBottomTitle" format="reference|dimension" />
+    <attr name="centerButtonTextTitle" format="reference|string" />
+    <attr name="centerButtonTextColorTitle" format="reference|color" />
+    <attr name="centerButtonTextSizeTitle" format="reference|dimension" />
+    <attr name="centerButtonBackgroundTitle" format="reference|color" />
+    <attr name="centerButtonPaddingTitle" format="reference|dimension" />
+    <attr name="centerButtonPaddingLeftTitle" format="reference|dimension" />
+    <attr name="centerButtonPaddingRightTitle" format="reference|dimension" />
+    <attr name="centerButtonPaddingTopTitle" format="reference|dimension" />
+    <attr name="centerButtonPaddingBottomTitle" format="reference|dimension" />
+
+    <declare-styleable name="barView">
+        <attr name="leftTypeTitle" />
+        <attr name="rightTypeTitle" />
+        <attr name="centerTypeTitle" />
+        <attr name="leftTextColorTitle" />
+        <attr name="leftTextSizeTitle" />
+        <attr name="leftTextTitle" />
+        <attr name="leftTextPaddingTitle" />
+        <attr name="leftTextPaddingLeftTitle" />
+        <attr name="leftTextPaddingRightTitle" />
+        <attr name="leftTextPaddingTopTitle" />
+        <attr name="leftTextPaddingBottomTitle" />
+        <attr name="leftImageSourceTitle" />
+        <attr name="leftImagePaddingTitle" />
+        <attr name="leftImagePaddingLeftTitle" />
+        <attr name="leftImagePaddingRightTitle" />
+        <attr name="leftImagePaddingTopTitle" />
+        <attr name="leftImagePaddingBottomTitle" />
+        <attr name="leftButtonTextTitle" />
+        <attr name="leftButtonTextColorTitle" />
+        <attr name="leftButtonTextSizeTitle" />
+        <attr name="leftButtonBackgroundTitle" />
+        <attr name="leftButtonPaddingTitle" />
+        <attr name="leftButtonPaddingLeftTitle" />
+        <attr name="leftButtonPaddingRightTitle" />
+        <attr name="leftButtonPaddingTopTitle" />
+        <attr name="leftButtonPaddingBottomTitle" />
+        <attr name="leftButtonMargInTitle" />
+        <attr name="leftButtonMargInLeftTitle" />
+        <attr name="leftButtonMargInRightTitle" />
+        <attr name="leftButtonMargInTopTitle" />
+        <attr name="leftButtonMargInBottomTitle" />
+        <attr name="rightTextColorTitle" />
+        <attr name="rightTextSizeTitle" />
+        <attr name="rightTextTitle" />
+        <attr name="rightTextPaddingTitle" />
+        <attr name="rightTextPaddingLeftTitle" />
+        <attr name="rightTextPaddingRightTitle" />
+        <attr name="rightTextPaddingTopTitle" />
+        <attr name="rightTextPaddingBottomTitle" />
+        <attr name="rightImageSourceTitle" />
+        <attr name="rightImagePaddingTitle" />
+        <attr name="rightImagePaddingLeftTitle" />
+        <attr name="rightImagePaddingRightTitle" />
+        <attr name="rightImagePaddingTopTitle" />
+        <attr name="rightImagePaddingBottomTitle" />
+        <attr name="rightButtonTextTitle" />
+        <attr name="rightButtonTextColorTitle" />
+        <attr name="rightButtonTextSizeTitle" />
+        <attr name="rightButtonBackgroundTitle" />
+        <attr name="rightButtonPaddingTitle" />
+        <attr name="rightButtonPaddingLeftTitle" />
+        <attr name="rightButtonPaddingRightTitle" />
+        <attr name="rightButtonPaddingTopTitle" />
+        <attr name="rightButtonPaddingBottomTitle" />
+        <attr name="rightButtonMargInTitle" />
+        <attr name="rightButtonMargInLeftTitle" />
+        <attr name="rightButtonMargInRightTitle" />
+        <attr name="rightButtonMargInTopTitle" />
+        <attr name="rightButtonMargInBottomTitle" />
+        <attr name="centerTextColorTitle" />
+        <attr name="centerTextSizeTitle" />
+        <attr name="centerTextTitle" />
+        <attr name="centerTextPaddingTitle" />
+        <attr name="centerTextPaddingLeftTitle" />
+        <attr name="centerTextPaddingRightTitle" />
+        <attr name="centerTextPaddingTopTitle" />
+        <attr name="centerTextPaddingBottomTitle" />
+        <attr name="centerImageSourceTitle" />
+        <attr name="centerImagePaddingTitle" />
+        <attr name="centerImagePaddingLeftTitle" />
+        <attr name="centerImagePaddingRightTitle" />
+        <attr name="centerImagePaddingTopTitle" />
+        <attr name="centerImagePaddingBottomTitle" />
+        <attr name="centerButtonTextTitle" />
+        <attr name="centerButtonTextColorTitle" />
+        <attr name="centerButtonTextSizeTitle" />
+        <attr name="centerButtonBackgroundTitle" />
+        <attr name="centerButtonPaddingTitle" />
+        <attr name="centerButtonPaddingLeftTitle" />
+        <attr name="centerButtonPaddingRightTitle" />
+        <attr name="centerButtonPaddingTopTitle" />
+    </declare-styleable>
+    
+    
+</resources>

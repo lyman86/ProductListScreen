@@ -1,16 +1,20 @@
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_page"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <include layout="@layout/product_list_screen_titlebar" />
+    android:layout_height="match_parent"
+    android:background="@color/custom_bg_gray" >
 
     <include
+        android:id="@+id/titlebar"
+        layout="@layout/commodity_list_screen_titlebar" />
+
+    <include
+        android:id="@+id/filter"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/titlebar"
-        layout="@layout/product_list_screen_filter" />
+        layout="@layout/commodity_list_screen_filter" />
 
     <View
         android:id="@+id/line_01"
@@ -18,32 +22,60 @@
         android:layout_height="1.0px"
         android:layout_below="@+id/filter"
         android:background="@android:color/darker_gray" />
-    
-<LinearLayout
-    android:id="@+id/screen_type_llayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/line_01"
-    android:visibility="gone"
-    android:orientation="vertical" >
-    
-    <com.example.productlistscreen.view.FlowLayout
-        android:id="@+id/screen_type_flayout"
+
+    <ListView
+        android:id="@+id/commodity_lv"
         android:layout_width="match_parent"
         android:background="@android:color/white"
-        android:layout_height="wrap_content" >
-    </com.example.productlistscreen.view.FlowLayout>
-    
-    <TextView 
-        android:id="@+id/screen_tv"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/remind_tv"
+        android:scrollbars="none" >
+    </ListView>
+    <GridView 
+        android:id="@+id/commodity_gv"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="系类筛选"
-        android:gravity="center"
-        android:background="@android:color/holo_green_light"
-        />
-    
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        android:visibility="gone"
+        android:horizontalSpacing="10dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/remind_tv"
+        android:verticalSpacing="10dp"
+        ></GridView>
 
-</LinearLayout>
- 
+    <TextView
+        android:id="@+id/remind_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_01"
+        android:background="@color/text_select_color"
+        android:gravity="center"
+        android:text="老板   注册认证可享受折扣价哦!"
+        android:textColor="@android:color/white" />
+
+    <include
+        android:id="@+id/catogory_menu"
+        layout="@layout/menu_catogory_brand" />
+
+    <include
+        android:id="@+id/brand_menu"
+        layout="@layout/menu_catogory_brand" />
+
+    <include
+        android:id="@+id/menu_screen"
+        layout="@layout/menu_screen" />
+
+    <include
+        android:id="@+id/menu_data_detail"
+        layout="@layout/menu_data_detail" />
+
+    <include
+        android:id="@+id/menu_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filter"
+        layout="@layout/menu_sort" />
+
 </RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <attr name="rightType">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+    </attr>
+    <attr name="rightTextColor" format="reference|color" />
+    <attr name="rightTextSize" format="reference|dimension" />
+    <attr name="rightText" format="reference|string" />
+    <attr name="rightTextPaddingRight" format="reference|dimension" />
+    
+    <attr name="rightImageSource" format="reference|integer" />
+    <attr name="rightImagePaddingRight" format="reference|dimension" />
+    <attr name="rightSideType">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+    </attr>
+    <attr name="rightSideTextColor" format="reference|color" />
+    <attr name="rightSideTextSize" format="reference|dimension" />
+    <attr name="rightSideText" format="reference|string" />
+    <attr name="rightSideTextPaddingRight" format="reference|dimension" />
+    
+    <attr name="rightSideImageSource" format="reference|integer" />
+    <attr name="rightSideImagePaddingRight" format="reference|dimension" />
+    <attr name="leftType">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+    </attr>
+    <attr name="leftTextColor" format="reference|color" />
+    <attr name="leftTextSize" format="reference|dimension" />
+    <attr name="leftText" format="reference|string" />
+    <attr name="leftTextPaddingLeft" format="reference|dimension" />
+    
+    <attr name="leftImageSource" format="reference|integer" />
+    <attr name="leftImagePaddingLeft" format="reference|dimension" />
+
+    <declare-styleable name="itemView">
+        <attr name="rightType" />
+        <attr name="rightSideType" />
+        <attr name="leftType" />
+        
+        <attr name="leftTextColor" />
+        <attr name="leftTextSize" />
+        <attr name="leftText" />
+        <attr name="leftTextPaddingLeft" />
+        
+        <attr name="leftImageSource" />
+        <attr name="leftImagePaddingLeft" />
+        
+        <attr name="rightTextColor" />
+        <attr name="rightTextSize" />
+        <attr name="rightText" />
+        <attr name="rightTextPaddingRight" />
+        
+        <attr name="rightImageSource" />
+        <attr name="rightImagePaddingRight" />
+        
+        <attr name="rightSideTextColor" />
+        <attr name="rightSideTextSize" />
+        <attr name="rightSideText" />
+        <attr name="rightSideTextPaddingRight" />
+        
+        <attr name="rightSideImageSource" />
+        <attr name="rightSideImagePaddingRight" />
+    </declare-styleable>
+
+</resources>

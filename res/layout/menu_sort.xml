@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyman="http://schemas.android.com/apk/res/com.example.productlistscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/darker_gray" />
+
+    <com.ly.commodityclassficationlist.view.CustomSelectItem
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        lyman:leftText="货期"
+        lyman:leftTextColor="@android:color/background_dark"
+        lyman:leftTextPaddingLeft="10dp"
+        lyman:leftTextSize="30sp"
+        lyman:leftType="text"
+        lyman:rightImagePaddingRight="10dp"
+        lyman:rightImageSource="@drawable/btn_check_buttonless_on"
+        lyman:rightType="image" >
+    </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/darker_gray" />
+
+    <com.ly.commodityclassficationlist.view.CustomSelectItem
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        lyman:leftText="综合排序"
+        lyman:leftTextColor="@android:color/background_dark"
+        lyman:leftTextPaddingLeft="10dp"
+        lyman:leftTextSize="30sp"
+        lyman:leftType="text" >
+    </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/darker_gray" />
+
+    <com.ly.commodityclassficationlist.view.CustomSelectItem
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        lyman:leftText="价格从低到高"
+        lyman:leftTextColor="@android:color/background_dark"
+        lyman:leftTextPaddingLeft="10dp"
+        lyman:leftTextSize="30sp"
+        lyman:leftType="text" >
+    </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@android:color/darker_gray" />
+
+    <com.ly.commodityclassficationlist.view.CustomSelectItem
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        lyman:leftText="价格从高到低"
+        lyman:leftTextColor="@android:color/background_dark"
+        lyman:leftTextPaddingLeft="10dp"
+        lyman:leftTextSize="30sp"
+        lyman:leftType="text" >
+    </com.ly.commodityclassficationlist.view.CustomSelectItem>
+
+    <View
+        android:id="@+id/down_view_sort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:layout_weight="1"
+        android:alpha="0.3"
+        android:background="@android:color/background_dark" />
+
+</LinearLayout>
